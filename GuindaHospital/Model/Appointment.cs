@@ -37,9 +37,9 @@ public partial class Appointment
 
     [ForeignKey("IdDoctor")]
     [InverseProperty("Appointments")]
-    public virtual Patient IdDoctor1 { get; set; } = null!;
+    public virtual Patient? IdDoctor1 { get; set; }
 
     [ForeignKey("IdDoctor")]
     [InverseProperty("Appointments")]
-    public virtual Doctor IdDoctorNavigation { get; set; } = null!;
+    public virtual Doctor? IdDoctorNavigation { get; set; }
 }

@@ -46,11 +46,7 @@ public partial class Patient
     [Unicode(false)]
     public string PhoneNumber { get; set; } = null!;
 
-    /// <summary>
-    /// 1 = Active
-    /// 0 = Inactive
-    /// 
-    /// </summary>
+ 
     [Column("status")]
     public int Status { get; set; }
 

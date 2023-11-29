@@ -41,5 +41,5 @@ public partial class Insurace
 
     [ForeignKey("IdPatient")]
     [InverseProperty("Insuraces")]
-    public virtual Patient IdPatientNavigation { get; set; } = null!;
+    public virtual Patient? IdPatientNavigation { get; set; } 
 }

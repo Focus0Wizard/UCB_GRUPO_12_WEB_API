@@ -50,7 +50,6 @@ namespace GuindaHospital.Controllers
         }
 
         // PUT: api/Patients/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPatient(int id, Patient patient)
         {
@@ -92,6 +91,7 @@ namespace GuindaHospital.Controllers
             _context.Patients.Add(patient);
             await _context.SaveChangesAsync();
 
+            //esta linea muestra en un json de que se creo ese registro
             return CreatedAtAction("GetPatient", new { id = patient.Id }, patient);
         }
 

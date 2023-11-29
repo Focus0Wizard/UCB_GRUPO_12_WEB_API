@@ -29,13 +29,13 @@ public partial class Prescription
 
     [ForeignKey("IdDoctor")]
     [InverseProperty("Prescriptions")]
-    public virtual Doctor IdDoctorNavigation { get; set; } = null!;
+    public virtual Doctor? IdDoctorNavigation { get; set; }
 
     [ForeignKey("IdDrug")]
     [InverseProperty("Prescriptions")]
-    public virtual Drug IdDrugNavigation { get; set; } = null!;
+    public virtual Drug? IdDrugNavigation { get; set; }
 
     [ForeignKey("IdPatient")]
     [InverseProperty("Prescriptions")]
-    public virtual Patient IdPatientNavigation { get; set; } = null!;
+    public virtual Patient? IdPatientNavigation { get; set; }
 }
