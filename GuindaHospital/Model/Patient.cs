@@ -46,6 +46,7 @@ public partial class Patient
     [Unicode(false)]
     public string PhoneNumber { get; set; } = null!;
 
+
  
     [Column("status")]
     public int Status { get; set; }

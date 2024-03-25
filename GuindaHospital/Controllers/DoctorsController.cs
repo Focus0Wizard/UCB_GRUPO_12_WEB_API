@@ -49,8 +49,6 @@ namespace GuindaHospital.Controllers
             return doctor;
         }
 
-        // PUT: api/Doctors/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDoctor(int id, Doctor doctor)
         {
@@ -80,8 +78,6 @@ namespace GuindaHospital.Controllers
             return NoContent();
         }
 
-        // POST: api/Doctors
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Doctor>> PostDoctor(Doctor doctor)
         {
@@ -95,7 +91,6 @@ namespace GuindaHospital.Controllers
             return CreatedAtAction("GetDoctor", new { id = doctor.Id }, doctor);
         }
 
-        // DELETE: api/Doctors/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDoctor(int id)
         {
